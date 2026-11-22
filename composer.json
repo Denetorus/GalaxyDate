@@ -1,0 +1,37 @@
+{
+  "require": {
+    "php": ">=8.4"
+  },
+  "name": "denetorus/galaxy-date",
+  "license": "MIT",
+  "require-dev": {
+    "phpunit/phpunit": "^13.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Galaxy\\Date\\": "src/"
+    }
+  },
+  "type": "library",
+  "description": "Calendar dates, date/time formatting, timezone conversion and Unix timestamps.",
+  "keywords": [
+    "date",
+    "datetime",
+    "timezone",
+    "validation",
+    "galaxy"
+  ],
+  "archive": {
+    "exclude": [
+      "/.git",
+      "/.idea",
+      "/AGENTS.md",
+      "/vendor",
+      "/composer.lock",
+      "/.phpunit.cache",
+      "/.phpunit.result.cache",
+      "/.env",
+      "/.env.*"
+    ]
+  }
+}
