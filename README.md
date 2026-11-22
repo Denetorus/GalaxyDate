@@ -6,40 +6,15 @@ Calendar dates, date/time, format conversion, IANA timezones and Unix timestamps
 PHP >=8.4 only. Namespace: `Galaxy\Date`. Package: `denetorus/galaxy-date`.
 No runtime dependencies on other Galaxy components.
 
-## Installation from local source
+## Installation
 
-For an independent application, place its directory beside the GalaxyDate source directory.
-Use this application `composer.json`:
-
-```json
-{
-    "name": "example/date-consumer",
-    "require": {
-        "php": ">=8.4",
-        "denetorus/galaxy-date": "dev-master"
-    },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../GalaxyDate",
-            "options": {
-                "symlink": false,
-                "versions": {"denetorus/galaxy-date": "dev-master"}
-            }
-        }
-    ]
-}
-```
-
-Run from the application directory:
+Install version 0.1.0 from [Packagist](https://packagist.org/packages/denetorus/galaxy-date):
 
 ```sh
-composer install --no-dev
+composer require denetorus/galaxy-date:0.1.0
 ```
 
-This is a local source installation, not a Packagist release.
-The explicit development version identifies the local source and does not designate a released version.
-Composer repositories must be configured in the consuming application's root manifest.
+Run the command from your application directory. No custom repository configuration or other Galaxy packages are required.
 
 ## Getting started
 

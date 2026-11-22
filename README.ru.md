@@ -6,40 +6,15 @@
 Только PHP >=8.4. Пространство имён: `Galaxy\Date`. Пакет: `denetorus/galaxy-date`.
 Runtime-зависимостей от других компонентов Galaxy нет.
 
-## Установка из локальных исходников
+## Установка
 
-Разместите каталог независимого приложения рядом с каталогом исходников GalaxyDate.
-Используйте такой `composer.json` приложения:
-
-```json
-{
-    "name": "example/date-consumer",
-    "require": {
-        "php": ">=8.4",
-        "denetorus/galaxy-date": "dev-master"
-    },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../GalaxyDate",
-            "options": {
-                "symlink": false,
-                "versions": {"denetorus/galaxy-date": "dev-master"}
-            }
-        }
-    ]
-}
-```
-
-Из каталога приложения выполните:
+Установите версию 0.1.0 из [Packagist](https://packagist.org/packages/denetorus/galaxy-date):
 
 ```sh
-composer install --no-dev
+composer require denetorus/galaxy-date:0.1.0
 ```
 
-Это установка из локальных исходников, а не выпуск в Packagist.
-Явная dev-версия обозначает локальные исходники и не назначает версию выпуска.
-Репозитории Composer задаются в корневом манифесте приложения-потребителя.
+Выполните команду из каталога приложения. Дополнительные репозитории Composer и другие пакеты Galaxy не требуются.
 
 ## Начало работы
 
